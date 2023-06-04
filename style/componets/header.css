@@ -1,0 +1,128 @@
+.header {
+    padding: 14px 0;
+    background-color: var(--white);
+    border-radius: 0px 0px 32px 32px;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header__container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__menu {
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .header__logo {
+    display: block;
+    margin-right: 40px;
+  }
+  
+  .header__menu__list {
+    display: flex;
+    margin-right: 260px;
+    flex-wrap: wrap;
+    gap: 10px 85px;
+  }
+  
+  /* .header__item:not(:first-child){
+  margin-left: 85px;
+  } -- переход на gap*/
+  .header__mobaile__menu {
+    display: none;
+    margin-right: auto;
+  }
+  
+  .header__item__link {
+    color: var(--black);
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    text-decoration: none;
+  }
+  
+  .header__item__link:hover {
+    border-bottom: 2px solid #FF9900;
+  }
+  
+  .header__item__link:focus {
+    border-bottom: none;
+    outline: 2px solid var(--orange);
+    outline-offset: 5px;
+  }
+  
+  .header__item__link:active {
+    border-bottom: 1px solid var(--orange-active);
+  }
+  
+  .header__menu-button {
+    cursor: pointer;
+    margin-top: 4px;
+  }
+  
+  .header__menu-button:focus {
+    outline: var(--orange) 1px solid;
+    outline-offset: 4px;
+  }
+  
+  
+  .header__menu-button:hover svg path,
+  .header__menu-button:hover svg rect, 
+  #search__form__sendid:hover svg rect,
+  #search__form__sendid:hover svg path
+   {
+    stroke: var(--orange);
+    transition-duration: 0.2s, 0.3s;
+    cursor: pointer;
+  }
+  #search__form__closeid:hover svg rect,
+  #search__form__closeid:hover svg circle{
+    stroke: var(--orange);
+    transition-duration: 0.2s, 0.3s;
+    cursor: pointer;
+  }
+  .header__menu-button:hover svg rect, 
+  #search__form__sendid:hover svg rect {
+    fill: var(--orange);
+    transition-duration: 0.2s, 0.3s;
+    cursor: pointer;
+  }
+  .search {
+    position: absolute;
+    display: none;
+    align-items: center;
+    right: 6px;
+    width: 539px;
+    background-color: var(--white);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+    padding: 18px 18px 18px 32px;
+    border-radius: 24px;
+  }
+  
+  .search__form__faсe {
+    display: flex;
+  }
+  
+  .search__form__close{
+    margin-left: 22px;
+    cursor: pointer;
+  }
+  .search__form__send{
+    margin-left: 14px;
+    cursor: pointer;
+  }
+  .search__input {
+    width: 100%;
+    padding: 8px 14px;
+    border: none;
+    border-radius: none;
+    border-bottom: 1px solid var(--gray);
+  }
+  
+  .search__for__input:focus {
+    outline: none;
+    border-color: var(--black);
+  }

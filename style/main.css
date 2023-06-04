@@ -15,3 +15,7 @@ body {
     max-width: 1870px;
     width: 100%;
 }
+.none{
+    max-height: 0;
+    overflow: hidden;
+}
