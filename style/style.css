@@ -1,11 +1,20 @@
-@import url(normalize.css);
-@import url(main.css);
-@import url(varialdes.css);
+@import 'normalize.css';
+@import 'fonts.css';
+@import 'main.css';
+@import 'varialdes.css';
 
 /*---components---*/
 @import 'componets/header.css';
 @import 'componets/hero.css';
-
+@import 'componets/list.css';
+@import 'componets/questions.css';
+@import 'componets/footer.css';
+a{
+ text-decoration: none;   
+}
 .hero__form {
 color: antiquewhite;
+}
+body{
+    background-color: #dbdbdb;
 }

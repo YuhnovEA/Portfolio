@@ -1,5 +1,5 @@
 .header {
-    padding: 14px 0;
+    padding: 1px 0;
     background-color: var(--white);
     border-radius: 0px 0px 32px 32px;
     box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
@@ -22,9 +22,10 @@
   
   .header__menu__list {
     display: flex;
-    margin-right: 260px;
+    margin-right: 70px;
+    margin-top: 6px;
     flex-wrap: wrap;
-    gap: 10px 85px;
+    gap: 10px 70px;
   }
   
   /* .header__item:not(:first-child){
@@ -60,35 +61,23 @@
   
   .header__menu-button {
     cursor: pointer;
-    margin-top: 4px;
+    margin-bottom: 200px;
+    margin-right: 20px;
   }
-  
+  .header__menu-buttontwo{
+    cursor: pointer;
+    margin-bottom: 200px;
+  }
+  .header__recycle__svg{
+    max-width: 30px;
+    max-height: 30px;
+    margin-bottom: 200px;
+    margin-right: 30px;
+    cursor: pointer;
+  }
   .header__menu-button:focus {
     outline: var(--orange) 1px solid;
     outline-offset: 4px;
-  }
-  
-  
-  .header__menu-button:hover svg path,
-  .header__menu-button:hover svg rect, 
-  #search__form__sendid:hover svg rect,
-  #search__form__sendid:hover svg path
-   {
-    stroke: var(--orange);
-    transition-duration: 0.2s, 0.3s;
-    cursor: pointer;
-  }
-  #search__form__closeid:hover svg rect,
-  #search__form__closeid:hover svg circle{
-    stroke: var(--orange);
-    transition-duration: 0.2s, 0.3s;
-    cursor: pointer;
-  }
-  .header__menu-button:hover svg rect, 
-  #search__form__sendid:hover svg rect {
-    fill: var(--orange);
-    transition-duration: 0.2s, 0.3s;
-    cursor: pointer;
   }
   .search {
     position: absolute;
@@ -126,3 +115,7 @@
     outline: none;
     border-color: var(--black);
   }
+  .container-ten {
+    display: flex;
+  }
+   
