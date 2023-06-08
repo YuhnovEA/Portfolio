@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- пропорция-->
-  <link rel="stylesheet" href="styles/accordion.min.css">
+  <link rel="stylesheet" href="style/accordion.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
   <link rel="stylesheet" href="style/style.css">
   <title>Document</title>
@@ -73,35 +73,45 @@
         </p>
         <button class="hero-button btn-default">Заказать расчёт</button>
       </div>
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <picture>
-            <source srcset="amg/hero1024-1.png" media="(max-width: 1024px)">
-            <source srcset="amg/hero768-1.png" media="(max-width: 768px)">
-            <source srcset="amg/hero320-1.png" media="(max-width: 320px)">
-            <img class="swiper__img" src="img/swiper-tort.png" alt="">
-          </picture>
+      <div class="swiper hero__container__swiper">
+        <!-- Additional required wrapper -->
+        <div class="hero__content">
+          <h1 class="hero__title">Проектные решения любой сложности</h1>
+          <p class="hero__description">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей
+            день
+            остаются уделом проектантов</p>
+          <button class="hero-button btn-default">Заказать расчёт</button>
         </div>
-        <div class="swiper-slide">
-          <picture>
-            <source srcset="amg/hero1024-2.png" media="(max-width: 1024px)">
-            <source srcset="amg/hero768-2.png" media="(max-width: 768px)">
-            <source srcset="amg/hero320-2.png" media="(max-width: 320px)">
-            <img class="swiper__img" src="img/swiper-tort2.png" alt="">
-          </picture>
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><div>Привет мир</div>
+            <picture>
+              <source srcset="amg/hero1024-1.png" media="(max-width: 1024px)">
+              <source srcset="amg/hero768-1.png" media="(max-width: 768px)">
+              <source srcset="amg/hero320-1.png" media="(max-width: 320px)">
+              <img class="swiper__img" src="img/swiper-tort.png" alt="">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="amg/hero1024-2.png" media="(max-width: 1024px)">
+              <source srcset="amg/hero768-2.png" media="(max-width: 768px)">
+              <source srcset="amg/hero320-2.png" media="(max-width: 320px)">
+              <img class="swiper__img" src="img/swiper-tort2.png" alt="">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="amg/hero1024-3.png" media="(max-width: 1024px)">
+              <source srcset="amg/hero768-3.png" media="(max-width: 768px)">
+              <source srcset="amg/hero320-3.png" media="(max-width: 320px)">
+              <img class="swiper__img" src="img/swiper-tort3.png" alt="">
+            </picture>
+          </div>
         </div>
-        <div class="swiper-slide">
-          <picture>
-            <source srcset="amg/hero1024-3.png" media="(max-width: 1024px)">
-            <source srcset="amg/hero768-3.png" media="(max-width: 768px)">
-            <source srcset="amg/hero320-3.png" media="(max-width: 320px)">
-            <img class="swiper__img" src="img/swiper-tort3.png" alt="">
-          </picture>
-        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
     </div>
   </section>
   <section class="list">
@@ -650,7 +660,7 @@
         <li class="list__item item ac">
           <button class="item__top botton">
             <span class="item__question ac-header ac-trigger">Из чего формируется конечная стоимость проекта?</span>
-            <span class="item__top__btn btn__two botton__plus-2"></span>
+            <span class="item__top__btn btn botton__plus-2"></span>
           </button>
           <div class="item__bottom">
             <p class="list__item__text ac-panel">Являясь всего лишь частью общей картины, непосредственные участники
@@ -673,7 +683,7 @@
           <button class="item__top botton">
             <span class="item__question ac-header ac-trigger">У меня есть свой проект. Сможем ли мы его доработать /
               реализовать?</span>
-            <span class="item__top__btn btn__two botton__plus-2"></span>
+            <span class="item__top__btn btn botton__plus-2"></span>
           </button>
           <div class="item__bottom">
             <p class="list__item__text ac-panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ut
@@ -685,7 +695,7 @@
           <button class="item__top botton">
             <span class="item__question ac-header ac-trigger">Я выбираю между разными компаниями. В чём ваше
               отличие?</span>
-            <span class="item__top__btn btn__two botton__plus-2"></span>
+            <span class="item__top__btn btn botton__plus-2"></span>
           </button>
           <div class="item__bottom">
             <p class="list__item__text ac-panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ut
@@ -698,7 +708,7 @@
             <span class="item__question ac-header ac-trigger">Могу ли я делегировать вам работу / согласование
               с подрядчиком /
               организацией?</span>
-            <span class="item__top__btn btn__two botton__plus-2"></span>
+            <span class="item__top__btn btn botton__plus-2"></span>
           </button>
           <div class="item__bottom">
             <p class="list__item__text ac-panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ut
@@ -710,7 +720,7 @@
           <button class="item__top botton">
             <span class="item__question ac-header ac-trigger">Могу ли я вернуть деньги на каком-либо из этапов
               работ?</span>
-            <span class="item__top__btn btn__two botton__plus-2"></span>
+            <span class="item__top__btn btn botton__plus-2"></span>
           </button>
           <div class="item__bottom">
             <p class="list__item__text ac-panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ut
@@ -727,7 +737,7 @@
       <div class="footer__menu">
         <img class="footer__logo" src="/img/footer-logo.png" alt="">
         <div class="footer__indent">
-          <nav class="Footer__list">
+          <nav class="footer__list">
             <ul class="footer__info">
               <li class="footer__item"><a href="#" class="footer__link">О нас</a></li>
               <li class="footer__item"><a href="#" class="footer__link">Проекты</a></li>
@@ -779,8 +789,8 @@
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="styles/accordion.min.js"></script>
-  <script src="script/script.js"></script>
+  <script src="style/accordion.min.js"></script>
+  <script defer src="script/script.js"></script>
 </body>
 
 </html>
