@@ -26,6 +26,7 @@ footer .container {
 
 .footer__text {
   max-width: 363px;
+  padding: 75px 0;
 }
 
 .footer__form {

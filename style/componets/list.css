@@ -1,3 +1,6 @@
+.list{
+  margin-left: 75px;
+}
 .test>li:nth-child(n) {
   display: block;
   width: 275px;
@@ -36,7 +39,7 @@
 .test-one {
   /*второй ряд иконок*/
   display: flex;
-  gap: 32px;
+  gap: 50px;
 }
 
 .test-one>li:nth-child(n) {

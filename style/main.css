@@ -19,7 +19,7 @@ body {
     max-height: 0;
     overflow: hidden;
 }
-.btn{
+.button{
     height: 36px;
     width: 120px;
     background-color: var(--blue);
