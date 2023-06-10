@@ -19,3 +19,10 @@ body {
     max-height: 0;
     overflow: hidden;
 }
+.button{
+    height: 36px;
+    width: 120px;
+    background-color: var(--blue);
+    border-radius: var(--border-radius);
+    color: var(--white);
+  }
