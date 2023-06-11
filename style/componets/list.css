@@ -1,6 +1,10 @@
 .list{
   margin-left: 75px;
 }
+.list__cakes{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
 .test>li:nth-child(n) {
   display: block;
   width: 275px;
@@ -143,3 +147,4 @@
   margin-bottom: 5px;
   padding: 6px 8px;
 }
+
