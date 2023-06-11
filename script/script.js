@@ -19,18 +19,19 @@ new Accordion('.accordion-container')
 
 
 class More {
-  constructor(list, item) {
+  constructor(list) {
     this.list = document.querySelectorAll(`${list} > li`)
-    this.on = document.querySelector(`${list} > .list_more`)
+    this.on = document.querySelector(`${list} > .list__more`)
     this.on.addEventListener("click", () => {
-      console.log(this.list);
+      this.on.classList.toggle("onclick")
       this.list.forEach(element => {
-        element.classList.remove("none")
-        this.on.classList.add("onclick")
-        this.on.classList.remove("list_more")
+        if (element.classList.contains("item__headen")) {
+          element.classList.toggle("none")
+        }
       });
     })
   }
 }
-console.log("bfgh");
-let a = new More(".list__cakes")
+new More(".list__cakes")
+// второй блок
+new More(".list__cakes__two")
