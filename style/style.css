@@ -1,20 +1,46 @@
-@import 'normalize.css';
-@import 'fonts.css';
-@import 'main.css';
-@import 'varialdes.css';
+@import "normalize.css";
+@import "fonts.css";
+@import "main.css";
+@import "varialdes.css";
 
 /*---components---*/
-@import 'componets/header.css';
-@import 'componets/hero.css';
-@import 'componets/list.css';
-@import 'componets/questions.css';
-@import 'componets/footer.css';
-a{
- text-decoration: none;   
+@import "componets/header.css";
+@import "componets/hero.css";
+@import "componets/list.css";
+@import "componets/questions.css";
+@import "componets/footer.css";
+a {
+    text-decoration: none;
 }
 .hero__form {
-color: antiquewhite;
+    color: antiquewhite;
 }
-body{
+body {
     background-color: #ebebeb;
+}
+
+.list__cakes {
+    display: grid;
+    grid-template-columns: repeat(4, 275px);
+    justify-content: space-between;
+    gap: 15px;
+}
+.list__cakes li {
+    flex-direction: column;
+    background-color: white;
+    border-radius: 25px;
+    gap: 10px;
+}
+.list_more ul,
+.list_more p,
+.list_more a {
+    display: none !important;
+}
+.list__cakes .onclick img {
+    height: 250px;
+    border-radius: 25px 25px 0 0;
+    cursor: pointer;
+}
+.list__cakes .onclick > div {
+    display: none;
 }
