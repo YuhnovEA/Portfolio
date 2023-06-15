@@ -1,3 +1,5 @@
+import { MoreList } from "./moreList.js"
+
 const modalWindowBtn = document.querySelector('.hero__form__button')
 modalWindowBtn.addEventListener('click', test)
 function test(event) {
@@ -18,20 +20,9 @@ const swiper = new Swiper('.swiper', {
 new Accordion('.accordion-container')
 
 
-class More {
-  constructor(list) {
-    this.list = document.querySelectorAll(`${list} > li`)
-    this.on = document.querySelector(`${list} > .list__more`)
-    this.on.addEventListener("click", () => {
-      this.on.classList.toggle("onclick")
-      this.list.forEach(element => {
-        if (element.classList.contains("item__headen")) {
-          element.classList.toggle("none")
-        }
-      });
-    })
-  }
-}
-new More(".list__cakes")
+
+let clouse_it = "<p>Закрыть</p>"
+
+new MoreList(".list__cakes", 8, clouse_it)
 // второй блок
-new More(".list__cakes__two")
+new MoreList(".list__cakes__two", 8, clouse_it)
